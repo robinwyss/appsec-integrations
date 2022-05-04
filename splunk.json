@@ -1,0 +1,14 @@
+{
+    "event": {
+        "Title": "{Title}",
+        "Description": "{Description}",
+        "severity": "{Severity}",
+        "score": {DavisSecurityScore},
+        "publicexposure": true,
+        "sensitivedata": {SensitiveDataReachable},
+        "exploit": {ExploitAvailable},
+        "securityProblemId":"{SecurityProblemId}",
+        "securityProblemUrl":"{SecurityProblemUrl}",
+         "affectedEntities": {AffectedEntities}
+    }
+}

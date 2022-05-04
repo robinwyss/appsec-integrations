@@ -1,0 +1,52 @@
+{
+    "text": "{Title}",
+    "blocks": [
+    	{
+    		"type": "header",
+    		"text": {
+    			"type": "plain_text",
+    			"text": "{Title}"
+    		}
+    	},
+    	{
+    		"type": "section",
+    		"block_id": "section567",
+    		"text": {
+    			"type": "mrkdwn",
+    			"text": "<!here>\n{Description}\n\n<{SecurityProblemUrl}|{SecurityProblemId}>"
+    		},
+    		"accessory": {
+    			"type": "image",
+    			"image_url": "https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2021/11/11103_RC_Blog_AppSec_800x450_FINAL-2-300x169.jpg",
+    			"alt_text": "Haunted hotel image"
+    		}
+    	},
+        {
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Public Exposure:*\n{Exposed}"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Sensitive Data:*\n{SensitiveDataReachable}"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Public Exploit:*\n{Exposed}"
+				}
+			]
+		},
+    	{
+    		"type": "section",
+    		"block_id": "section789",
+    		"fields": [
+    			{
+    				"type": "mrkdwn",
+    				"text": "*Davis Security Score*\n{DavisSecurityScore}"
+    			}
+    		]
+    	}
+    ]
+}

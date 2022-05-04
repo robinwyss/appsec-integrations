@@ -1,0 +1,34 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "themeColor": "0076D7",
+    "summary": "{SecurityProblemId}: {Severity} - {Title}",
+    "sections": [{
+        "activityTitle": "{SecurityProblemId}: {Severity} - {Title}",
+        "activitySubtitle": "{Description}",
+        "activityImage": "https://github.com/robinwyss/appsec-integrations/raw/main/assets/security-{Severity}.png",
+        "facts": [{
+            "name": "Score",
+            "value": "{DavisSecurityScore}"
+        }, {
+            "name": "Public Exposure",
+            "value": "{Exposed}"
+        }, {
+            "name": "Sensitive Data",
+            "value": "{SensitiveDataReachable}"
+        },
+        {
+            "name": "Exploit Available",
+            "value": "{ExploitAvailable}"
+        }],
+        "markdown": true
+    }],
+    "potentialAction": [{
+        "@type": "OpenUri",
+        "name": "Open in Dynatrace",
+        "targets": [{
+            "os": "default",
+            "uri": "{SecurityProblemUrl}"
+        }]
+    }]
+}
