@@ -4,7 +4,9 @@
 - [Create a Teams Webhook integration](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook#create-an-incoming-webhook-1)
 - Configure the notification integration in Dynatrace:
   - Webhook URL: the previously created slack webhook endpoint
-  - Configure the payload:
+  - Configure the payload
+
+Example payload:
 ```JSON
 {
     "@type": "MessageCard",
@@ -50,7 +52,9 @@ This creates a card in the teams channel for every new vulnerability. The card c
 - [Create a Slack Webhook](https://api.slack.com/messaging/webhooks)
 - Configure the notification integration in Dynatrace:
   - Webhook URL: the previously created slack webhook endpoint
-  - Configure the payload:
+  - Configure the payload
+
+Example payload:
 ```JSON
 {
     "text": "{Title}",
@@ -103,7 +107,7 @@ This creates a card in the teams channel for every new vulnerability. The card c
     		]
     	}
     ]
-}
+}![slack screenshot](assets/slack-screenshot.png)
 ```
 
 ![slack screenshot](assets/slack-screenshot.png)
@@ -114,7 +118,9 @@ This creates a card in the teams channel for every new vulnerability. The card c
 - Configure the notification integration in Dynatrace:
   - Webhook URL: <URL to your splunk instance>/services/collector/event 
   - Add and additional header: `Authorization: Splunk <TOKEN>`
-  - Configure the Payload:
+  - Configure the Payload
+
+Example payload:
 ```JSON
 {
     "event": {
@@ -131,3 +137,4 @@ This creates a card in the teams channel for every new vulnerability. The card c
     }
 }
 ```
+![splunk screenshot](assets/splunk-screenshot.png)
